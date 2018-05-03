@@ -1,1 +1,38 @@
+/*Test 1 Questions*/
+/*Q1*/
+h1{
+    color: blue;
+}
+/*Q2*/
+.colleges{
+    background-color: #c83;
+}
+/*Q3*/
+.topics{
+    list-style-type: none;
+}
+/*Q4*/
+figure{
+    max-width: 300px;
+    
+}
+
+figure{
+    display: inline-block;
+    text-align: center;
+}
+
+div img{
+    width: 150px;
+    height: 200px;
+    padding: 10px 10px 10px 10px;
+    float: auto;
+}
+
+div figure{
+    display: inline-block; /*Q5*/
+    margin: 20px 20px 20px 20px; /*Q6*/
+}
+/*Q7 HTML changes line 55 to 58 :)*/
+
 

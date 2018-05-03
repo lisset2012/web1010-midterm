@@ -8,6 +8,11 @@
     rel="stylesheet" 
     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
     crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
   <title>Final Exam Part 2</title>
   <style>
     body{
@@ -27,20 +32,66 @@
       text-align: center;
       background-color: #ECECEC;
     }
+    .modal-footer{
+      text-align: left;
+    }
+    
+    .remember-left{
+      text-align: left;
+    }
+
+   
   </style>
 </head>
-<body>
-  <div class="modal" id="mymodal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <img src="img/b.png" alt="logo">
-        </div>
-          <div class="modal-body">
-            <p>Type Name and Password Here</p>
+
+    <body>
+        <div class="container-fluid">
+          <div class="resize">
+              <!--<button type="button" class="btn btn-success" data-toggle="modal" data-target="#popUpWindow">Sign in</button>-->
+              <!--Just traying something. Ignore the comented button Sign in-->
+              <div class="modal" id="mymodal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!--header-->
+                    <div class="modal-header">
+                      <img src="img/b.png" alt="logo">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button> <!--Agregar el boton de cierre a la derecha del pop-up-->
+                    </div>
+                    <!--body-->
+                      <div class="modal-body">
+                       
+                        <form action="">
+                          <p>
+                          <div class="input-group input-group-lg ">
+                            <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-chevron-right"></span></span>
+                            <input type="text" class="form-control" placeholder="Type your username and password." aria-describedby="sizing-addon1" disabled>
+                          </div>
+                          </p>
+                          <p><input type="text" class="form-control" placeholder="Username (type ERROR for error efect)"></p><!--La clase form-control estira el input a lo largo del div y le da mejor diseno-->
+                          <p><input type="password" class="form-control" placeholder="Password"></p>
+                          
+                          <div class="remember-left">
+                              <input type="checkbox" name="remember-me">
+                              <label for="remember-me">Remember me</label>
+                          </div>
+      
+                          <p><button type="submit" class="btn btn-block btn-primary">Login</button></p>
+                        </form>
+                        <!--footer-->
+                            <div class="modal-footer">
+                              <span><a href="lost_pass.html">Lost password?</a></span>
+                              <span><a href="register.html">Register</a></span>
+                            </div>
+                        
+                        
+                      </div>
+                  </div>
+                </div>
           </div>
+        
+        </div>
       </div>
-    </div>
-  </div>
-</body>
+      </body>
+        
+
 </html>
